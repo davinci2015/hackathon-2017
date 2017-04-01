@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemCollectionViewCell" customModule="Platimi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="134" height="292"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="134" height="292"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hrana" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY1-99-d8v">
+                        <rect key="frame" x="15" y="48" width="104" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="item_first" translatesAutoresizingMaskIntoConstraints="NO" id="rx4-VU-87t">
+                        <rect key="frame" x="0.0" y="93" width="134" height="177"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="TY1-99-d8v" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="1Wl-MS-9c7"/>
+                <constraint firstItem="rx4-VU-87t" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BRl-6P-Bsu"/>
+                <constraint firstAttribute="trailing" secondItem="rx4-VU-87t" secondAttribute="trailing" id="PSg-vv-Url"/>
+                <constraint firstItem="TY1-99-d8v" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="enh-Sa-qbc"/>
+                <constraint firstItem="TY1-99-d8v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="48" id="gKA-Tg-afb"/>
+                <constraint firstAttribute="bottom" secondItem="rx4-VU-87t" secondAttribute="bottom" constant="22" id="jwc-81-Qoa"/>
+                <constraint firstItem="rx4-VU-87t" firstAttribute="top" secondItem="TY1-99-d8v" secondAttribute="bottom" constant="22" id="rh0-RI-Dav"/>
+            </constraints>
+            <size key="customSize" width="134" height="292"/>
+            <connections>
+                <outlet property="image" destination="rx4-VU-87t" id="Tbk-ng-mvn"/>
+                <outlet property="title" destination="TY1-99-d8v" id="GJi-8G-2Yu"/>
+            </connections>
+            <point key="canvasLocation" x="-134" y="-208"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="item_first" width="196" height="196"/>
+    </resources>
+</document>

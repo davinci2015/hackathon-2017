@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Platimi" customModuleProvider="target">
+            <connections>
+                <outlet property="btnQuiz" destination="qd6-Gg-Job" id="Tcp-XO-BCo"/>
+                <outlet property="btnStory" destination="0pY-1y-aVJ" id="uKn-0M-Pf8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qd6-Gg-Job">
+                    <rect key="frame" x="0.0" y="0.0" width="333.5" height="375"/>
+                    <color key="backgroundColor" red="0.77462722081218272" green="0.77462722081218272" blue="0.77462722081218272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" backgroundImage="quiz"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pY-1y-aVJ">
+                    <rect key="frame" x="333.5" y="0.0" width="333.5" height="375"/>
+                    <color key="backgroundColor" red="0.77462722080000002" green="0.77462722080000002" blue="0.77462722080000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" backgroundImage="story"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0pY-1y-aVJ" secondAttribute="bottom" id="4Yw-g0-pL5"/>
+                <constraint firstAttribute="trailing" secondItem="0pY-1y-aVJ" secondAttribute="trailing" id="7z6-tK-uEc"/>
+                <constraint firstItem="0pY-1y-aVJ" firstAttribute="leading" secondItem="qd6-Gg-Job" secondAttribute="trailing" id="8Az-hC-kQ3"/>
+                <constraint firstItem="qd6-Gg-Job" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="NHJ-jc-HSV"/>
+                <constraint firstItem="qd6-Gg-Job" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Pf2-tE-L4N"/>
+                <constraint firstAttribute="bottom" secondItem="qd6-Gg-Job" secondAttribute="bottom" id="WF1-dg-Tzz"/>
+                <constraint firstItem="qd6-Gg-Job" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mRn-Z8-Ne4"/>
+                <constraint firstItem="0pY-1y-aVJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rCg-HA-LUf"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="73.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="quiz" width="667" height="750"/>
+        <image name="story" width="667" height="750"/>
+    </resources>
+</document>

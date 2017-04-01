@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpeechRecognitionViewController" customModule="Platimi" customModuleProvider="target">
+            <connections>
+                <outlet property="detectedTextLabel" destination="auN-Ya-ljh" id="H6i-NH-Xtz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9o3-RC-f4A">
+                    <rect key="frame" x="607" y="315" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Jgv-nG-o82"/>
+                        <constraint firstAttribute="width" secondItem="9o3-RC-f4A" secondAttribute="height" multiplier="1:1" id="bso-Rj-imI"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="button-play"/>
+                    <connections>
+                        <action selector="startButtonTapped:" destination="-1" eventType="touchUpInside" id="MJW-uh-JVw"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kontejner" translatesAutoresizingMaskIntoConstraints="NO" id="UFn-S0-k0H">
+                    <rect key="frame" x="60.5" y="87" width="546" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="eHR-3F-69t"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auN-Ya-ljh">
+                    <rect key="frame" x="582" y="346" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="auN-Ya-ljh" secondAttribute="bottom" constant="29" id="1aZ-rc-5QF"/>
+                <constraint firstAttribute="bottom" secondItem="9o3-RC-f4A" secondAttribute="bottom" constant="20" id="TpX-AT-NGy"/>
+                <constraint firstAttribute="trailing" secondItem="9o3-RC-f4A" secondAttribute="trailing" constant="20" id="nYK-1z-vWd"/>
+                <constraint firstItem="UFn-S0-k0H" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tC6-i1-qAi"/>
+                <constraint firstItem="9o3-RC-f4A" firstAttribute="leading" secondItem="auN-Ya-ljh" secondAttribute="trailing" constant="25" id="yJB-xU-TAF"/>
+                <constraint firstItem="UFn-S0-k0H" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yaA-YJ-Otm"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button-play" width="60" height="60"/>
+        <image name="kontejner" width="546" height="196"/>
+    </resources>
+</document>

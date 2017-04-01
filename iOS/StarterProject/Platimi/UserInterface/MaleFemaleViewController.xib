@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaleFemaleViewController" customModule="Platimi" customModuleProvider="target">
+            <connections>
+                <outlet property="femaleButton" destination="eQz-76-XTq" id="dYM-yQ-ljF"/>
+                <outlet property="maleButton" destination="AFb-g0-0fm" id="AEi-i6-wCS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFb-g0-0fm">
+                    <rect key="frame" x="0.0" y="0.0" width="333.5" height="375"/>
+                    <state key="normal" backgroundImage="man"/>
+                    <connections>
+                        <action selector="maleButtonTapped:" destination="-1" eventType="touchUpInside" id="vbR-E0-uAl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQz-76-XTq">
+                    <rect key="frame" x="333.5" y="0.0" width="333" height="375"/>
+                    <state key="normal" backgroundImage="woman"/>
+                    <connections>
+                        <action selector="femaleButtonTapped:" destination="-1" eventType="touchUpInside" id="4CA-Xz-QCx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eQz-76-XTq" secondAttribute="bottom" id="06p-fb-pET"/>
+                <constraint firstItem="AFb-g0-0fm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1JW-6W-fvO"/>
+                <constraint firstItem="eQz-76-XTq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CCe-pQ-Bht"/>
+                <constraint firstItem="AFb-g0-0fm" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="L99-V7-4nN"/>
+                <constraint firstItem="eQz-76-XTq" firstAttribute="leading" secondItem="AFb-g0-0fm" secondAttribute="trailing" id="QcO-dX-eM6"/>
+                <constraint firstItem="AFb-g0-0fm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="laN-oI-syg"/>
+                <constraint firstAttribute="trailing" secondItem="eQz-76-XTq" secondAttribute="trailing" id="vzf-So-auq"/>
+                <constraint firstAttribute="bottom" secondItem="AFb-g0-0fm" secondAttribute="bottom" id="yDZ-dW-h2z"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="man" width="667" height="750"/>
+        <image name="woman" width="667" height="750"/>
+    </resources>
+</document>

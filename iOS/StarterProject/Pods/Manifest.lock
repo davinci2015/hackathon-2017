@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (4.4.0)
+  - Gifu (2.0.0)
+  - PureLayout (3.0.2)
+  - RxCocoa (3.0.1):
+    - RxSwift (~> 3.0)
+  - RxSwift (3.0.1)
+  - SocketRocket (0.5.1)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - Gifu
+  - PureLayout
+  - RxCocoa (~> 3.0)
+  - RxSwift (~> 3.0)
+  - SocketRocket
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Gifu: 56a4d8f1092399159fa32662aa2232158b48d8ac
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
+  RxSwift: af5680055c4ad04480189c52d28385b1029493a6
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: 74f1356a1770580d42f4d9d6a52eb2543ac4cfa6
+
+COCOAPODS: 1.2.0

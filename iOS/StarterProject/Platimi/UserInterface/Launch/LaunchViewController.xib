@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LaunchViewController" customModule="Platimi" customModuleProvider="target">
+            <connections>
+                <outlet property="image" destination="3oF-5e-CBX" id="sfa-bj-eVP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rabbit" translatesAutoresizingMaskIntoConstraints="NO" id="3oF-5e-CBX">
+                    <rect key="frame" x="243" y="97" width="180" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="02j-LC-GK3"/>
+                        <constraint firstAttribute="width" secondItem="3oF-5e-CBX" secondAttribute="height" multiplier="1:1" id="qwN-xH-dse"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.9882352941176471" green="0.59215686274509804" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3oF-5e-CBX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Dkj-8I-bWI"/>
+                <constraint firstItem="3oF-5e-CBX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="jqg-L4-YED"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="rabbit" width="331" height="276"/>
+    </resources>
+</document>
