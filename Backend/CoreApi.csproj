@@ -1,0 +1,241 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot/wwwroot.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="wwwroot\.gitkeep" />
+    <Content Include="wwwroot\android-icon-144x144.png" />
+    <Content Include="wwwroot\android-icon-192x192.png" />
+    <Content Include="wwwroot\android-icon-36x36.png" />
+    <Content Include="wwwroot\android-icon-48x48.png" />
+    <Content Include="wwwroot\android-icon-72x72.png" />
+    <Content Include="wwwroot\android-icon-96x96.png" />
+    <Content Include="wwwroot\apple-icon-114x114.png" />
+    <Content Include="wwwroot\apple-icon-120x120.png" />
+    <Content Include="wwwroot\apple-icon-144x144.png" />
+    <Content Include="wwwroot\apple-icon-152x152.png" />
+    <Content Include="wwwroot\apple-icon-180x180.png" />
+    <Content Include="wwwroot\apple-icon-57x57.png" />
+    <Content Include="wwwroot\apple-icon-60x60.png" />
+    <Content Include="wwwroot\apple-icon-72x72.png" />
+    <Content Include="wwwroot\apple-icon-76x76.png" />
+    <Content Include="wwwroot\apple-icon-precomposed.png" />
+    <Content Include="wwwroot\apple-icon.png" />
+    <Content Include="wwwroot\browserconfig.xml" />
+    <Content Include="wwwroot\css\new-age.css" />
+    <Content Include="wwwroot\css\new-age.min.css" />
+    <Content Include="wwwroot\favicon-16x16.png" />
+    <Content Include="wwwroot\favicon-32x32.png" />
+    <Content Include="wwwroot\favicon-96x96.png" />
+    <Content Include="wwwroot\favicon.ico" />
+    <Content Include="wwwroot\forest.jpg" />
+    <Content Include="wwwroot\img\app-store-badge.svg" />
+    <Content Include="wwwroot\img\bg-pattern.png" />
+    <Content Include="wwwroot\img\cabin.png" />
+    <Content Include="wwwroot\img\demo-screen-1.jpg" />
+    <Content Include="wwwroot\img\google-play-badge.svg" />
+    <Content Include="wwwroot\img\logo.png" />
+    <Content Include="wwwroot\img\white-rabbit_dribbble_v4.gif" />
+    <Content Include="wwwroot\img\white-recycle-symbol-hi.png" />
+    <Content Include="wwwroot\index.html" />
+    <Content Include="wwwroot\js\new-age.js" />
+    <Content Include="wwwroot\js\new-age.min.js" />
+    <Content Include="wwwroot\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="wwwroot\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="wwwroot\lib\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="wwwroot\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="wwwroot\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="wwwroot\lib\device-mockups\apple_watch\edition\gold.png" />
+    <Content Include="wwwroot\lib\device-mockups\apple_watch\edition\rose.png" />
+    <Content Include="wwwroot\lib\device-mockups\apple_watch\sport\black.png" />
+    <Content Include="wwwroot\lib\device-mockups\apple_watch\sport\blue.png" />
+    <Content Include="wwwroot\lib\device-mockups\apple_watch\sport\green.png" />
+    <Content Include="wwwroot\lib\device-mockups\apple_watch\sport\red.png" />
+    <Content Include="wwwroot\lib\device-mockups\apple_watch\sport\white.png" />
+    <Content Include="wwwroot\lib\device-mockups\apple_watch\watch\metal.png" />
+    <Content Include="wwwroot\lib\device-mockups\apple_watch\watch\steel.png" />
+    <Content Include="wwwroot\lib\device-mockups\device-mockups.css" />
+    <Content Include="wwwroot\lib\device-mockups\device-mockups.min.css" />
+    <Content Include="wwwroot\lib\device-mockups\device-mockups2.css" />
+    <Content Include="wwwroot\lib\device-mockups\device-mockups2.min.css" />
+    <Content Include="wwwroot\lib\device-mockups\galaxy_s3\s3_land_black.png" />
+    <Content Include="wwwroot\lib\device-mockups\galaxy_s3\s3_land_white.png" />
+    <Content Include="wwwroot\lib\device-mockups\galaxy_s3\s3_port_black.png" />
+    <Content Include="wwwroot\lib\device-mockups\galaxy_s3\s3_port_white.png" />
+    <Content Include="wwwroot\lib\device-mockups\galaxy_s5\galaxy_s5_land_black.png" />
+    <Content Include="wwwroot\lib\device-mockups\galaxy_s5\galaxy_s5_land_gold.png" />
+    <Content Include="wwwroot\lib\device-mockups\galaxy_s5\galaxy_s5_land_white.png" />
+    <Content Include="wwwroot\lib\device-mockups\galaxy_s5\galaxy_s5_port_black.png" />
+    <Content Include="wwwroot\lib\device-mockups\galaxy_s5\galaxy_s5_port_gold.png" />
+    <Content Include="wwwroot\lib\device-mockups\galaxy_s5\galaxy_s5_port_white.png" />
+    <Content Include="wwwroot\lib\device-mockups\galaxy_tab4\galaxy_tab4_land_black.png" />
+    <Content Include="wwwroot\lib\device-mockups\galaxy_tab4\galaxy_tab4_land_white.png" />
+    <Content Include="wwwroot\lib\device-mockups\galaxy_tab4_small\galaxy_tab4_black_small.png" />
+    <Content Include="wwwroot\lib\device-mockups\galaxy_tab4_small\galaxy_tab4_white_small.png" />
+    <Content Include="wwwroot\lib\device-mockups\imac\imac.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad\ipad_land_black.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad\ipad_land_white.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad\ipad_port_black.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad\ipad_port_white.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_air\ipad_air_gray_land.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_air\ipad_air_gray_port.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_air\ipad_air_silver_land.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_air\ipad_air_silver_port.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_air_2\ipad_air_2_gold_land.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_air_2\ipad_air_2_gold_port.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_air_2\ipad_air_2_gray_land.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_air_2\ipad_air_2_gray_port.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_air_2\ipad_air_2_silver_land.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_air_2\ipad_air_2_silver_port.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_pro\ipad_pro_land_black.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_pro\ipad_pro_land_gold.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_pro\ipad_pro_land_silver.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_pro\ipad_pro_port_black.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_pro\ipad_pro_port_gold.png" />
+    <Content Include="wwwroot\lib\device-mockups\ipad_pro\ipad_pro_port_silver.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone5\iphone5_land.psd" />
+    <Content Include="wwwroot\lib\device-mockups\iphone5\iphone5_land_black.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone5\iphone5_land_white.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone5\iphone5_port_black.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone5\iphone5_port_white.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_6\iphone_6_land_black.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_6\iphone_6_land_gold.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_6\iphone_6_land_white.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_6\iphone_6_port_black.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_6\iphone_6_port_gold.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_6\iphone_6_port_white.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_6_plus\iphone_6_plus_black_land.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_6_plus\iphone_6_plus_black_port.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_6_plus\iphone_6_plus_gold_land.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_6_plus\iphone_6_plus_gold_port.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_6_plus\iphone_6_plus_white_land.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_6_plus\iphone_6_plus_white_port.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_se\iphone_se_land_black.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_se\iphone_se_land_gold.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_se\iphone_se_land_rose.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_se\iphone_se_land_white.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_se\iphone_se_port_black.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_se\iphone_se_port_gold.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_se\iphone_se_port_rose.png" />
+    <Content Include="wwwroot\lib\device-mockups\iphone_se\iphone_se_port_white.png" />
+    <Content Include="wwwroot\lib\device-mockups\lumia920\lumia920_land.png" />
+    <Content Include="wwwroot\lib\device-mockups\lumia920\lumia920_land.psd" />
+    <Content Include="wwwroot\lib\device-mockups\lumia920\lumia920_port.png" />
+    <Content Include="wwwroot\lib\device-mockups\lumia_930\lumia_930_dark_land.png" />
+    <Content Include="wwwroot\lib\device-mockups\lumia_930\lumia_930_dark_port.png" />
+    <Content Include="wwwroot\lib\device-mockups\lumia_930\lumia_930_light_land.png" />
+    <Content Include="wwwroot\lib\device-mockups\lumia_930\lumia_930_light_port.png" />
+    <Content Include="wwwroot\lib\device-mockups\macbook\macbook.png" />
+    <Content Include="wwwroot\lib\device-mockups\macbook_2015\gold.png" />
+    <Content Include="wwwroot\lib\device-mockups\macbook_2015\grey.png" />
+    <Content Include="wwwroot\lib\device-mockups\macbook_2015\silver.png" />
+    <Content Include="wwwroot\lib\device-mockups\nexus7\nexus7_land.png" />
+    <Content Include="wwwroot\lib\device-mockups\nexus7\nexus7_port.png" />
+    <Content Include="wwwroot\lib\device-mockups\nexus_6\nexus_6_land.png" />
+    <Content Include="wwwroot\lib\device-mockups\nexus_6\nexus_6_port.png" />
+    <Content Include="wwwroot\lib\device-mockups\samsung_tv\samsung_tv.png" />
+    <Content Include="wwwroot\lib\device-mockups\surface\surface.png" />
+    <Content Include="wwwroot\lib\font-awesome\css\font-awesome.css" />
+    <Content Include="wwwroot\lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="wwwroot\lib\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="wwwroot\lib\font-awesome\less\animated.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\bordered-pulled.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\core.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\fixed-width.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\font-awesome.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\icons.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\larger.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\list.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\mixins.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\path.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\rotated-flipped.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\screen-reader.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\stacked.less" />
+    <Content Include="wwwroot\lib\font-awesome\less\variables.less" />
+    <Content Include="wwwroot\lib\font-awesome\scss\font-awesome.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_animated.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_core.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_icons.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_larger.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_list.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_mixins.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_path.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_stacked.scss" />
+    <Content Include="wwwroot\lib\font-awesome\scss\_variables.scss" />
+    <Content Include="wwwroot\lib\jquery\jquery.js" />
+    <Content Include="wwwroot\lib\jquery\jquery.min.js" />
+    <Content Include="wwwroot\lib\simple-line-icons\css\simple-line-icons.css" />
+    <Content Include="wwwroot\lib\simple-line-icons\fonts\Simple-Line-Icons.eot" />
+    <Content Include="wwwroot\lib\simple-line-icons\fonts\Simple-Line-Icons.svg" />
+    <Content Include="wwwroot\lib\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="wwwroot\lib\simple-line-icons\fonts\Simple-Line-Icons.woff" />
+    <Content Include="wwwroot\lib\simple-line-icons\fonts\Simple-Line-Icons.woff2" />
+    <Content Include="wwwroot\lib\simple-line-icons\less\simple-line-icons.less" />
+    <Content Include="wwwroot\lib\simple-line-icons\scss\simple-line-icons.scss" />
+    <Content Include="wwwroot\manifest.json" />
+    <Content Include="wwwroot\map\favicon.ico" />
+    <Content Include="wwwroot\map\fontawesome-webfont.svg" />
+    <Content Include="wwwroot\map\fontawesome-webfont.ttf" />
+    <Content Include="wwwroot\map\fontawesome-webfont.woff" />
+    <Content Include="wwwroot\map\fontawesome-webfont.woff2" />
+    <Content Include="wwwroot\map\images\material_bg.png" />
+    <Content Include="wwwroot\map\images\sprout.png" />
+    <Content Include="wwwroot\map\index.html" />
+    <Content Include="wwwroot\map\main.561ba3c143252f45c91b.js" />
+    <Content Include="wwwroot\map\main.561ba3c143252f45c91b.js.map" />
+    <Content Include="wwwroot\map\main.f6628021f38fe946d31c74970e7e4d5d.css" />
+    <Content Include="wwwroot\map\main.f6628021f38fe946d31c74970e7e4d5d.css.map" />
+    <Content Include="wwwroot\map\material_bg.png" />
+    <Content Include="wwwroot\map\vendor\jquery.signalR.min.js" />
+    <Content Include="wwwroot\memory.html" />
+    <Content Include="wwwroot\jquery.signalR.min.js" />
+    <Content Include="wwwroot\ms-icon-144x144.png" />
+    <Content Include="wwwroot\ms-icon-150x150.png" />
+    <Content Include="wwwroot\ms-icon-310x310.png" />
+    <Content Include="wwwroot\ms-icon-70x70.png" />
+    <Content Include="wwwroot\park.jpg" />
+    <Content Include="wwwroot\rabbit.png" />
+    <Content Include="wwwroot\script.js" />
+    <Content Include="wwwroot\sea.jpg" />
+    <Content Include="wwwroot\style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="1.0.0-msbuild3-final" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0-*" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.0.2" />
+    <PackageReference Include="Flurl.Http" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Server" Version="0.2.0-preview2-22683" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.1.1" />
+    <PackageReference Include="Swashbuckle" Version="6.0.0-beta902" />
+  </ItemGroup>
+</Project>
