@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory game</title>
+  <link href="https://fonts.googleapis.com/css?family=Abel|Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="align-center">
+
+  <h1 class="heading">Memory</h1>
+  <p class="desc">Name Memory Game</p>
+
+  <button class="btn" id="btn-start">
+    Start
+  </button>
+
+  <div class="cards-container">
+    <div class="flip-container hide" id="card-template">
+      <div class="flipper">
+        <div class="front">
+          <label>Card</label>
+        </div>
+        <div class="back">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="timer">
+    <label id="minutes"></label>:
+    <label id="seconds"></label>
+    <div class="time">
+      MY BEST TIME: <span id="bestTime"></span>
+    </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>

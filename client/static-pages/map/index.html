@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Map</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Abel", sans-serif;
+    }
+    .modal {
+      text-align: center;
+    }
+    .tingle-modal-box {
+      top: 10%;
+    }
+
+    .tingle-modal-box__content {
+      padding: 1rem !important;
+    }
+    .tingle-modal__closeIcon {
+      font-size: 2rem;
+    }
+    .tingle-modal {
+      top: 0 !important;
+    }
+    .tingle-modal__close {
+      position: absolute;
+      bottom: 0;
+      top: auto;
+    }
+    .tingle-modal__closeLabel {
+      font-size: 0.8rem;
+    }
+    .tingle-modal-box__content img {
+      width: 100%;
+    }
+  </style>
+  <link rel="stylesheet" href="tingle.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Lobster" rel="stylesheet">
+</head>
+<body>
+<div id="map"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js"></script>
+<script src="tingle.min.js"></script>
+<script src="./script.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8YE78UZyc78jgE3YrgKl-m0RZA1YHiq8&callback=initMap">
+</script>
+</body>
+</html>

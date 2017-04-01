@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parallax</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100%;
+    }
+
+    .panel {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .sections {
+    }
+
+    .panel label {
+      position: relative;
+      display: block;
+      top: 50%;
+    }
+    .panel--blue {
+      background-color: cornflowerblue;
+    }
+
+    .panel--red {
+      background-color: indianred;
+    }
+  </style>
+</head>
+<body>
+
+<section class="panel panel--blue">
+  <label>ONE</label>
+</section>
+<section class="panel panel--red">
+  <label>TWO</label>
+</section>
+<section class="panel panel--blue">
+  <label>THREE</label>
+</section>
+<section class="panel panel--red">
+  <label>FOUR</label>
+</section>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+<script>
+  $(function () { // wait for document ready
+    // init
+    var controller = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        triggerHook: 'onLeave'
+      }
+    });
+
+    // get all slides
+    var slides = document.querySelectorAll("section.panel");
+
+    // create scene for every slide
+    for (var i=0; i<slides.length; i++) {
+      new ScrollMagic.Scene({
+        triggerElement: slides[i]
+      })
+        .setPin(slides[i])
+        .addTo(controller);
+    }
+  });
+</script>
+</body>
+</html>
